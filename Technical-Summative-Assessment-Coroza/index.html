@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Majeeb Coroza | Professional Resume</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; 
+    color: black;
+    position: relative;
+  }
+  .resume-container {
+    width: 40%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .header img {
+    width: 150px;
+    height: 150px;
+    /*border-radius: 50%;*/
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+  }
+  .content-block {
+    margin-bottom: 20px;
+  }
+  .content-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .change-mode {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .change-mode {
+  background-color: black; /* Blue background */
+  border-radius: 5%; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px; /* Some padding */
+  font-size: 12px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.change-mode:hover {
+  background-color: gray;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<button class="change-mode">Change Color</button>
+
+<div class="resume-container">
+  <div class="header">
+    <img src="resume.jpg" />
+    <h1>Rei Majeeb Coroza</h1>
+    <table border="0" cellpadding="10px" width="80%" align="center">
+        <p>Address: 114B Mariveles St. Laloma, Quezon City</p>
+        <p>Contact No.: 09178957430</p>
+        <p>Email: coroza.majeeb@gmail.com</p>
+    </table>
+  </div>
+  <div class="content-block">
+    <div class="content-title">Profile:</div>
+        <p> I set out to become the person I want to be in the future, and I believe I'll succeed if I work hard enough. 
+            I like to keep things tidy and organized. I am capable of operating independently with minimal guidance and 
+            dedicated to delivering high-quality service on any task, with an awareness of health, welfare, and 
+            environmental concerns. </p><br>
+  </div>
+  <div class="content-block">
+    <div class="content-title">Academic Background:</div>
+        <p><strong>Dominican School Manila</strong></p>
+        <p> Graduate (2016) : Grade 1 - 6<br>
+            Graduate (2020) : Grade 7 - 10</p>
+    
+        <p><strong>Far Eastern University</strong></p>
+        <p> Senior Highschool (2019-2021)<br>
+        STEM (Science, Technology, Engineering, and Mathematics)</p>
+
+        <p><strong>FEU Institute of Technology</strong></p>
+        <p>College<br>
+            Bachelor of Science Major in Information Technology<br> 
+            with specialization in Web and Mobile Application
+        </p><br>
+    </div>
+  <div class="content-block">
+    <div class="content-title">Goals:</div>
+        <p> My goals in life are to graduate with high honors and to become a succesful 
+        Web Developer. I also want to inspire other people who someday wants to be a Web Developer. Lastly, I want 
+        to build a happy and healthy family to be with me for the rest of my life.</p>
+  </div>
+</div>
+
+<script>
+  document.querySelector('.change-mode').onclick = function() {
+    let resumeContainer = document.querySelector('.resume-container');
+    let isLightMode = resumeContainer.style.backgroundColor === 'white' || resumeContainer.style.backgroundColor === '';
+    resumeContainer.style.backgroundColor = isLightMode ? '#333' : 'white';
+    resumeContainer.style.color = isLightMode ? 'white' : 'black';
+  };
+</script>
+</body>
+</html>
