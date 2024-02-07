@@ -1,0 +1,20 @@
+button {
+    margin: 10px;
+  }
+  
+  #box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transition: transform 1s;
+  }
+  
+  .move {
+    transform: translateY(200px);
+  }
+  
+  .change-color {
+    background-color: blue;
+    transition-delay: 1s;
+  }
