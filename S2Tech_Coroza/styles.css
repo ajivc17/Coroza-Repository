@@ -1,20 +1,73 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding-top: 100px; /* Add padding to the top to make space for the boxes */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.box {
+    width: 20vw;
+    height: 20vw;
+    margin: 0px auto; /* Updated to center the box horizontally */
+    opacity: 0;
+    transform: translateY(0);
+    transition: transform 0.5s ease, background-color 1s ease, opacity 0.5s ease;
+    background-color: #fff; /* White background inside the box */
+    border: 5px solid transparent; /* Initially, transparent border */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+}
+
+
 button {
-    margin: 10px;
-  }
-  
-  #box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    transition: transform 1s;
-  }
-  
-  .move {
-    transform: translateY(200px);
-  }
-  
-  .change-color {
-    background-color: blue;
-    transition-delay: 1s;
-  }
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+#Monday {
+    background-color: #f44336; /* Red */
+    color: #fff; /* White text */
+}
+
+#Tuesday {
+    background-color: #2196f3; /* Blue */
+    color: #fff; /* White text */
+}
+
+#Wednesday {
+    background-color: #4caf50; /* Green */
+    color: #fff; /* White text */
+}
+
+#Thursday {
+    background-color: #ffc107; /* Yellow */
+    color: #333; /* Dark text */
+}
+
+#Friday {
+    background-color: #9c27b0; /* Purple */
+    color: #fff; /* White text */
+}
+
+#Saturday {
+    background-color: #673ab7; /* Deep purple */
+    color: #fff; /* White text */
+}
+
+#Sunday {
+    background-color: #ff5722; /* Deep orange */
+    color: #fff; /* White text */
+}
